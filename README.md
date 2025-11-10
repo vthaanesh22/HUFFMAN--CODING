@@ -29,11 +29,11 @@ print the characters and its huffmancode
 DEVELOPED BY: Thaanesh.V
 REGISTER NUMBER: 212223230228
 ```
-# Step 1: Get the input string
+## Step 1: Get the input string
 ```
 input_string = "huffman coding" 
 ```
-# Step 2: Calculate frequency of each character in the input string
+## Step 2: Calculate frequency of each character in the input string
 ```
 frequency = {}
 for char in input_string:
@@ -42,11 +42,11 @@ for char in input_string:
     else:
         frequency[char] = 1
 ```
-# Step 3: Create tree nodes
+## Step 3: Create tree nodes
 ```
 nodes = [[char, freq] for char, freq in frequency.items()]
 ```
-# Step 4: Main function to implement Huffman coding
+## Step 4: Main function to implement Huffman coding
 ```
 while len(nodes) > 1:
     # Sort nodes based on frequency
@@ -62,7 +62,7 @@ while len(nodes) > 1:
 # The final node is the Huffman tree
 huffman_tree = nodes[0]
 ```
-# Step 5: Generate Huffman codes
+## Step 5: Generate Huffman codes
 ```
 huffman_codes = {}
 
@@ -75,7 +75,7 @@ def generate_codes(tree, code=""):
 
 generate_codes(huffman_tree)
 ```
-# Step 6: Print the characters and their Huffman codes
+## Step 6: Print the characters and their Huffman codes
 ```
 print("Character | Huffman Code")
 print("-------------------------")
